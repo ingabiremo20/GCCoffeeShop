@@ -1,0 +1,28 @@
+﻿<h3>Please fill the form to Register!</h3>
+<div>
+    <form method="post" action="AddUser">
+        <div class="row">
+            <div class="container">
+                <div class="col-lg-4">    
+                    User Name: <input type="text" name="UserName" class="form-control" Minlength="3" maxlength="10" required />
+                    First Name: <input type="text" name="FirstName" class="form-control" Minlength="3" maxlength="20" required />
+                    Last Name: <input type="text" name="LastName" class="form-control" Minlength="3" maxlength="20" required />
+                    Email: <input type="email" name="Email" class="form-control" Minlength="3" maxlength="20" required />
+                    Phone Number: <input type="tel" name="PhoneNumber"class="form-control" placeholder="123-456-7890" pattern="^\d{3}-\d{3}-\d{4}$" required />
+                    Password: <input type="password" name="Password" class="form-control" Minlength="8" maxlength="50" required /><br>
+                    
+                    Languages:
+                    <input type="checkbox" name="language"  value="english"  checked/> English
+                    <input type="checkbox" name="language" value="french"/> French
+                    <input type="checkbox" name="language" value="spanish"> Spanish
+                    <input type="checkbox" name="language" value="other"> Other<br><br>
+                    Gender:
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other<br><br>
+                    <input type="submit" name="submit" value="Register" class="btn btn-info" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
