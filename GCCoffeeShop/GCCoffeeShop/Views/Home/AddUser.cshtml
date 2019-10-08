@@ -1,3 +1,18 @@
-﻿
+﻿@Model GCCoffeeShop.Models.User
 
 <h1>Hello @ViewBag.UserName !</h1>
+
+@{
+    string hello = "hello World";
+    int age = 27;
+    age *= age;
+}
+<h1>Time is: @DateTime.Now</h1>
+<p>@hello</p>
+<h2>Age: @age</h2>
+@{DateTime TestStarted=DateTime.Now; }
+<h1>@TestStarted</h1>
+@foreach( User user in Model)
+{
+    <h1>@user.Email</h1>
+}
